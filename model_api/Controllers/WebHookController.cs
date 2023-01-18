@@ -24,7 +24,6 @@ namespace model_api.Controllers
 
     public WebHookController(CustomerDbContext customerDbContext, IOptions<AppSettings> appSettings)
     {
-            StripeConfiguration.ApiKey = "sk_test_51MJbrPG7Y5eTJXxU70XSO3JaAylPd85hnWDx25p10qcALvNJCROLatvtC1IheR7mrMxMuM8mNFzxEhCGkX5jJIsv009S06xLLi";
             _customerDbContext = customerDbContext;
             _appSettings = appSettings.Value;
         }
